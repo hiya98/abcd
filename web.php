@@ -13,5 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/posts', function (){
+   return view('post');
 
-Route::get('/posts/{post}', 'PostsController@show');
+});
+Route::view('form','post');
+Route::post('/button','post@button');
+
