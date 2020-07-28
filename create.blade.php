@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,23 +71,57 @@
     </style>
 </head>
 <body><center>
-    <h1 >Forgot password</h1>
+    <h1 >Signup</h1>
     <div class="container">
-        <form action="/submit" method="forgot">
+        <form action="/submit" method="create">
             @csrf
+            <div class="row">
+                <div class="col-25">
+                    <label for="Name">Name</label>
+                </div>
+                <div class="col-25">
+                    <input type="varchar" id="Name" name="Name" placeholder="Your fullname..">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-25">
                     <label for="Email">Email</label>
                 </div>
                 <div class="col-25">
-                    <input type="varchar" id="Email" name="Email" placeholder="Your Email..">
+                    <input type="varchar" id="Email" name="Email" placeholder="Your email..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Username">Username</label>
+                </div>
+                <div class="col-25">
+                    <input type="varchar" id="Username" name="Username" placeholder="Your username..">
                 </div>
             </div>
 
-            <button type="submit">Submit</button>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Password">Password</label>
+                </div>
+                <div class="col-25">
+                    <input type="password" id="Password" name="Password" placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Confirmpassword">Confirm Password</label>
+                </div>
+                <div class="col-25">
+                    <input type="password" id="Confirmpassword" name="Confirmpassword" placeholder="Type Password again..">
+                </div>
+            </div>
+            <button type="submit">Signup</button>
+
         </form>
     </div>
 </center>
 </body>
 </html>
+
 
